@@ -188,7 +188,7 @@ font-size: 20px;
 }
 @media (min-width:700px) {
     button:hover{
-        transform: scale(1.05) translate(-7%);
+        transform: scale(1.05) translate(-10%);
         transition-duration: 0.3s;
         cursor: pointer;
         }

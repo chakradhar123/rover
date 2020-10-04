@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500;600;700&display=swap" rel="stylesheet">.
     <link rel="stylesheet" href="./roverDetail.css">
-    <link rel="icon" href="logo.ico" type="image/x-icon" />
-    <link rel="shortcut icon" href="logo.ico" type="image/x-icon" />
+    <link rel="icon" href="./logo.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="./logo.ico" type="image/x-icon" />
     
 
    
@@ -22,10 +22,10 @@
 </div>
 <div class="container">
     <header>
-        <h1 class="logo"><a href="Landing.html"><img src="./logo1.png" alt="logo"></a></h1>
+        <h1 class="logo"><a href="./Landing.html"><img src="./logo1.png" alt="logo"></a></h1>
         <ul class="nav nav-show">
            
-            <li class="navlink"><a href="Home.html">Back</a></li>
+            <li class="navlink"><a href="./Home.html">Back</a></li>
             
         </ul>
         <div class="burger">
@@ -34,7 +34,7 @@
     </header>
 <div class="detail-container">
     <div class="card">
-        <img class="rover-image" src="roverimages/bgtrail3.jpg" alt="Avatar" style="width:100%">
+        <img class="rover-image" src="./roverimages/bgtrail3.jpg" alt="Avatar" style="width:100%">
         <div class="cont">
           <div class="card-top">
             <h4><b class="rover-name">John Doe</b></h4> 
@@ -50,7 +50,7 @@
           <input type="date" name="start_date" id="start_date">
           <div>End Date</div>
           <input type="date" name="end_date" id="end_date">
-          <button>Checkout</button>
+          <button class="checkout">Checkout</button>
       </div>
 </div>
         <footer class="footer">
@@ -59,29 +59,34 @@
             </div>
         </footer>
         
-        <div class="receipt">
-            <div class="receipt-inside">
+        <div class="receipt hide">
+            <div class="receipt-inside hide">
             <div class="close">x</div>
             <div class="receipt-head">Receipt</div>
             <div class="receipt-item">
                 <div class="receipt-title">Rover :</div>
-                <div class="receipt-info">Roro Rover</div>
+                <div class="receipt-info receipt-name">Roro Rover</div>
             </div>
             <div class="receipt-item">
                 <div class="receipt-title">Start Date :</div>
-                <div class="receipt-info">23/07/20</div>
+                <div class="receipt-info receipt-start">23/07/20</div>
             </div>
             <div class="receipt-item">
                 <div class="receipt-title">End Date :</div>
-                <div class="receipt-info">28/07/20</div>
+                <div class="receipt-info receipt-end">28/07/20</div>
             </div>
+            
             <div class="receipt-item">
                 <div class="receipt-title">Fare Per Day :</div>
-                <div class="receipt-info">$12</div>
+                <div class="receipt-info receipt-fare">$12</div>
+            </div>
+            <div class="receipt-item">
+                <div class="receipt-title">Total Days :</div>
+                <div class="receipt-info receipt-days">5</div>
             </div>
             <div class="receipt-item">
                 <div class="receipt-title">Total :</div>
-                <div class="receipt-info total">$72</div>
+                <div class="receipt-info total receipt-total">$72</div>
             </div>    
             </div>
 
@@ -92,8 +97,8 @@
 </div>
 
 
-<script src="roverDetail.js"></script>
-<script src="manager.js"></script>
+<script src="./roverDetail.js"></script>
+<script src="./manager.js"></script>
 <script src="https://kit.fontawesome.com/23d82a91bc.js" crossorigin="anonymous"></script>
   
 </body>

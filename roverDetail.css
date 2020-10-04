@@ -304,7 +304,7 @@ font-size: 25px;
     }
     .receipt{
         background-color:rgba(0,0,0,0.8);
-       display:none;
+    
         position: fixed;
         left: 0;
         text-align: center;
@@ -317,7 +317,7 @@ font-size: 25px;
         
     }
     .receipt-inside{
-         display: none;
+         
         background-color: #c4c4c4;
         position: absolute;
         top:13%;
@@ -366,4 +366,7 @@ font-size: 25px;
 position: absolute;;
 z-index: 10000000;
         background: black;
+    }
+    .hide{
+        display: none;
     }

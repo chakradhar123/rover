@@ -7,7 +7,6 @@ html,body{
     height: 100%;
     width: 100%;
     margin: 0;
-    scroll-behavior: smooth;
     padding: 0;
     
 }
@@ -129,7 +128,6 @@ header {
    width: 220px;
    margin:0 20px;
    transform: translateY(10px);
-   cursor: pointer;
    
 }
 .logo{
@@ -164,125 +162,29 @@ header {
     margin-top: -10px;
 }
 
-@media screen and (max-width: 678px) {
-    /* header {
-        margin:20px 0;
-    } */
-    .logo img {
-        
-        margin:0 12px;
-        
-     }
-    .burger {
-        display: block;
-    }
-    .navlink {
-        list-style: none;
-        margin:0;
-    }
-    .nav {
-        margin: 0;
-       
-        position: absolute;
-        /* right: -100%; */
-        top: 70px;
-        width: 50%;
-        height: calc(100% - 70px);
-        flex-direction: column;
-        justify-content: flex-start;
-        padding: 0;
-        text-align: center;
-        right: 0;
-        transition: all 400ms;
-        background-color: black;
-    }
-    .bg-black{
-        background-color: black !important;
-    }
-    .navlink {
-        text-align: center;
-        background-color: black;
-    }
 
-    .nav-active {
-        background-color: black;
-        
-    }
-    .nav-show{
-        display: none;
-    }
-}
-#over {
-    position: relative;
-  text-align: center;
-  color: white;
-  font-size: 50px;
-  margin-bottom: 2rem;
-}
-#over img{
-    height:40rem;
-    width: 100%;
-}
-.twtext{
-    position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.hello{
-    color: white;
-}
-.type-cursor { color:#fff; animation:blink .4s ease infinite;opacity:0; }
- @keyframes blink {
- 	100% { opacity:1; }
- }
- .footer {
-   
 
-    width: 100%;
-    
-   
-    background-color: rgb(0, 0, 0);
-  }
-  
-  .footer-text-container .muted {
-   
-    color: white;
-    text-align: center;
-  }
-  .grid-wrapper {
+.detail-container{
+    margin-top: 100px;
     display: flex;
-  flex-wrap: wrap;
-    grid-gap: 10px;
-    margin:0 10vw;
-    align-items: center;
-    justify-content: center;
-}
-
-.box {
-    background-color: #444;
-    padding: 130px;
-    margin: 20px;
-}
-
-.box > img {
-    width: 100%;
+    
 }
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    width: 300px;
+    width: 60vw;
+    
     background-color: #e7e7e7;
-    border-radius: 5px;
+    border-radius: 10px;
     color: black;
     margin:20px 30px;
-    text-align: center;
+   
     font-size: 19px;
   }
   .card img{
     border-radius: 5px;
     width: 130px;
-    height: 240px;
+    height: 500px;
   }
   
   .card:hover {
@@ -295,54 +197,173 @@ header {
   .cont h4{
       margin-top: -5px;
   }
-  button{
-    background-color:#152A3E;
-    color: white;
-    border: none;
-    font-size: 22px;
-    padding: 1px 20px;
-    border-radius: 5px;
-    font-family: 'Baloo-Da';  
-   
+
+.footer {
+   position: fixed;
+bottom: 0;
+    width: 100%;
     
-    }
-    button:hover{
-        transform: scale(1.1);
-        cursor: pointer;
-        transition-duration: 0.3s;
-    }
-    .heading{
-        text-align: center;
-        line-height: normal;
-        letter-spacing: 1px;
-        font-size: 45px;
-    }
-    @media  (max-width: 768px) {
-        #typewriter{
-            font-size: 30px;
-        }
-.grid-wrapper{
+   
+    background-color: rgb(0, 0, 0);
+  } 
+  
+  .footer-text-container .muted {
+   
+    color: white;
+    text-align: center;
+  }
+.form{
+    width: 40vw;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
+}
+.form div{
+    font-size: 30px;
+}
+.form input{
+    font-family: 'Baloo-Da'; 
+    background-color: #C4C4C4; 
+    border-radius: 5px;
+    border: none;
+    width: 300px;
+    padding:5px 20px;
+    font-size: 20px;
+    margin:20px 0;
+    cursor: text;
+}
+button{
+    font-family: 'Baloo-Da'; 
+    background-color:#498FB7;
+transform: scale(1.3);
+    color: white;
+    border: none;
+    font-size: 18px;
+    padding: 3px 50px;
+    border-radius: 5px;
+    margin:20px 0;
+    
+    
+    }
+    
+    button:hover{
+    transform: scale(1.45) ;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    }
+    @media (min-width:700px) {
+html{
+    overflow: hidden;
+}
+    }
+    @media (max-width:700px) {
+.detail-container{
+    flex-direction: column;
     align-items: center;
 }
+.form input{
+    width: 250px;
+}
 .card{
-    margin: 20px 0;
-    width: 200px;
+    width: 90vw;
 }
-.grid-wrapper{
-    margin: 0;
-}
-.card img{
-    width:150px;
-    height: 150px;
+.footer{
+    position: relative;
 }
 
+
+
     }
-    .contact-detail{
+    .card-top{
+        font-size: 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+    #price{
+        color: #514F4F;
+        font-weight: lighter;
+        letter-spacing: 1px;
+        font-family: 'Baloo Paaji 2', cursive;
+        margin-top: -10px;
+        font-size: 30px;
+    }
+    .card-bottom{
+        margin-top: 10px;
+    }
+    @media (max-width:340px) {
+        .form div{
+font-size: 25px;
+        }
+        .card-top{
+            font-size: 25px;
+        }
+        .logo img{
+            margin-right: 0;
+        }
+    }
+    .receipt{
+        background-color:rgba(0,0,0,0.8);
+       display:none;
+        position: fixed;
+        left: 0;
         text-align: center;
-        color: #EEC1C1;
-        font-size: 25px;
-        margin-bottom: 10px;
+        font-size: 30px;
+        right: 0%;
+        top:0;
+        bottom: 0;
+        color: black;
+        overflow-y: scroll;
+        
+    }
+    .receipt-inside{
+         display: none;
+        background-color: #c4c4c4;
+        position: absolute;
+        top:13%;
+        border-radius: 10px;
+        left:30%;
+        right: 30%;
+        
+        overflow-y: scroll;
+        overflow: hidden;
+        
+    }
+    .close{
+        position: absolute;
+        right: 10px;
+    font-size: 25px;
+    cursor: pointer;
+        top: 0;
+    }
+    .receipt-item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Baloo Paaji 2', cursive;
+    }
+    .receipt-title{
+        font-weight: 600;
+    }
+    @media (max-width:700px) {
+        .receipt-item{
+            flex-direction: column;
+        }
+        .receipt-inside{
+          
+            left: 5vw;
+            right: 5vw;
+            margin-bottom: 20px;
+        }
+        .total{
+            font-weight: bold;
+            font-size: 35px;
+        }
+    }
+    .receipt-cover{
+        width: 100vw;
+        height: 100vh;
+position: absolute;;
+z-index: 10000000;
+        background: black;
     }

@@ -172,9 +172,7 @@ transform: scale(1.05) ;
 transition-duration: 0.3s;
 cursor: pointer;
 }
-.main-head img{
-    
-}
+
 .para{
    text-align: center; 
 font-size: 20px;
